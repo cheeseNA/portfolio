@@ -8,22 +8,25 @@ import { Canvas } from "@react-three/fiber";
 import { CheeseModel } from "./CheeseModel";
 import { Environment } from "@react-three/drei";
 import { Suspense } from "react";
+import { Box } from "lucide-react";
 
 export const CheeseView = () => {
   return (
-    <div id="canvas-container" className="w-full">
+    <div
+      id="canvas-container"
+      className="h-full w-full object-cover object-center"
+    >
       <Canvas shadows>
         <Suspense fallback={null}>
-          <PerspectiveCamera
-            makeDefault
-            position={[0, 4, 5]}
-            fov={50}
-            // rotation={[0, 80, 0]}
-          >
+          <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={50}>
             {/* <pointLight position-z={-15} intensity={1.0} color="#F8C069" /> */}
           </PerspectiveCamera>
           <ambientLight intensity={1.0} />
           <CheeseModel position={[0, -1.5, 0]} />
+          {/* <mesh>
+            <boxGeometry args={[1, 2, 3]} />
+            <meshStandardMaterial />
+          </mesh> */}
           <SoftShadows />
           <ContactShadows
             rotation={[Math.PI / 2, 0, 0]}
