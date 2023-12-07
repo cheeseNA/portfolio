@@ -10,7 +10,7 @@ export const Header = () => {
       <div className="flex items-center text-lg">
         <Link
           href="#top-section"
-          className="px-4 font-medium whitespace-nowrap"
+          className="mr-4 font-medium whitespace-nowrap"
         >
           Top
         </Link>
