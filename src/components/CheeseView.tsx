@@ -1,6 +1,6 @@
 import {
   ContactShadows,
-  OrbitControls,
+  PresentationControls,
   PerspectiveCamera,
   SoftShadows,
 } from "@react-three/drei";
@@ -32,7 +32,14 @@ export const CheeseView = () => {
             position={[10, 15, -5]}
             castShadow
           />
-          <CheeseModel position={[0, 0, 0]} />
+          <PresentationControls
+            global={false}
+            speed={1}
+            config={{ mass: 1, tension: 170, friction: 26 }}
+            polar={[0, 0]}
+          >
+            <CheeseModel position={[0, 0, 0]} />
+          </PresentationControls>
           <Environment preset="sunset" blur={1} />
           <ContactShadows
             resolution={512}
