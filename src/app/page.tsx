@@ -33,7 +33,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="overflow-hidden lg:h-auto xl:w-5/12">
+            <div className="overflow-hidden lg:h-auto xl:w-1/2">
               <CheeseView />
             </div>
           </section>
