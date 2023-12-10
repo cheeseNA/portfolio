@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export const Header = () => {
   return (
-    <header className="fixed z-50 flex items-center w-full border justify-between p-4 backdrop-blur-sm">
+    <header className="fixed z-50 flex items-center w-full border-b justify-between p-4 backdrop-blur-sm">
       <div className="flex items-center">
         <p className="font-semibold text-xl">Ryoma Maeda</p>
       </div>

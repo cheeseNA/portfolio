@@ -6,6 +6,7 @@ This is a portfolio website showcasing my work as a software engineer and web de
 
 - Next.js for server-side rendering and routing
 - Tailwind CSS for styling
+- shadcn/ui for UI components
 - Vercel for hosting and deployment
 - Sentry for error tracking
 - Google Analytics for usage tracking
